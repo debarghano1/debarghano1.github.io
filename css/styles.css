@@ -43,6 +43,14 @@ header{
 	color: #FA8334;
 	font-family: 'Krona One', sans-serif;
 }
+/*Navigation
+-----------------------------------*/
+nav .button{
+	background: #add8e6;
+}
+nav .button:hover{
+	background: #d4ebf2;
+}
 /*Featured Projects
 -----------------------------------*/
 .projects{
