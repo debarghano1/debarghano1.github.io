@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Hi, this is Deb Argha, Mechanical Design aspirant!
 
 You can use the [editor on GitHub](https://github.com/debarghano1/debarghano1.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
