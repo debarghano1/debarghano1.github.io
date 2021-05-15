@@ -46,9 +46,11 @@ header{
 /*Navigation
 -----------------------------------*/
 nav .button{
+	display: inline-block;
 	background: #add8e6;
 }
 nav .button:hover{
+	display: inline-block;
 	background: #d4ebf2;
 }
 /*Featured Projects
@@ -123,12 +125,14 @@ nav .button:hover{
 	text-decoration: none;
 	background: #fffdd0;
 }
+
 /*Skills
 -----------------------------------*/
 .column{
 	float: left;
 	width: 33%
-}
+}/*also used in hobbies*/
+
 /*Hobbies
 -----------------------------------*/
 .hobbies{
