@@ -48,7 +48,7 @@ header{
 /*Navigation
 -----------------------------------*/
 nav {
-	text-align: center;
+	align-content: center;
 }
 nav .button{
 	display: inline-block;
@@ -61,7 +61,7 @@ nav .button:hover{
 /*Featured Projects
 -----------------------------------*/
 .projects{
-	background: #c48652ff;
+	background: #C48652FF;
 	padding-bottom: 10px;
 	margin: 0 auto;
 }
