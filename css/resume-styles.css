@@ -47,6 +47,9 @@ header{
 }
 /*Navigation
 -----------------------------------*/
+nav {
+	text-align: center;
+}
 nav .button{
 	display: inline-block;
 	background: #add8e6;
