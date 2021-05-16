@@ -1,0 +1,10 @@
+/*Navigation Secondary*/
+#nav-bar a{
+	display: inline-block;
+	/*font-weight: bold;*/
+	/*text-decoration: none;*/
+	color: #F2C078;
+	background: #8AAA79;
+	padding: 8px;
+	border-radius: 4px;
+}

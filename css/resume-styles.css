@@ -38,10 +38,12 @@ header{
 	font-family: 'Lobster', cursive;
 	font-size: 70px;
 	margin: 0;
+	text-align: center;
 }
 #headline{
 	color: #FA8334;
 	font-family: 'Krona One', sans-serif;
+	text-align: center;
 }
 /*Navigation
 -----------------------------------*/
