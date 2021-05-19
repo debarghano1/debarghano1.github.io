@@ -48,7 +48,7 @@ header{
 /*Navigation
 -----------------------------------*/
 nav {
-	align-content: center;
+	margin: 8px auto;
 }
 nav .button{
 	display: inline-block;
