@@ -48,6 +48,7 @@ header{
 /*Navigation
 -----------------------------------*/
 nav {
+	width: 58%;
 	margin: 8px auto;
 }
 nav .button{
