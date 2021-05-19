@@ -29,9 +29,9 @@ a:visited {
 
 /*PersonalInfo
 -----------------------------------*/
-header{
+header#intro{
 	background: #F4F1BB;
-	padding: 8px;
+	padding: 2px;
 	margin: 0 auto;
 }
 #name{
@@ -49,29 +49,31 @@ header{
 /*Navigation
 -----------------------------------*/
 nav {
-	margin: 8px auto;
+	margin: 5px auto;
 	text-align: center;
 }
 nav .button{
 	display: inline-block;
+	margin: 2px 2px;
 	background: #add8e6;
 }
 nav .button:hover{
 	display: inline-block;
+	margin: 2px 2px;
 	background: #d4ebf2;
 }
 /*Featured Projects
 -----------------------------------*/
 #projects{
 	background: #C48652FF;
-	padding-bottom: 10px;
+	padding: 10px 0;
 	margin: 0 auto;
 }
 #projects img{
 	float: left;
 	border-radius: 4px;
 	margin-right: 30px;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 }
 
 #projects h4{
@@ -83,7 +85,7 @@ nav .button:hover{
 #projects a:hover{
 	color: #911715ff;
 	background: rgba(244, 241, 187, 50);
-	border-radius: 3px;
+	border-radius: 4px;
 }
 
 #projects .button{
@@ -98,7 +100,7 @@ nav .button:hover{
 -----------------------------------*/
 #work-experience{
 	background: #F6CC8E;
-	padding-bottom: 10px;
+	padding-bottom: 12px;
 }
 #work-experience .button{
 	color: #911715ff;
@@ -121,11 +123,16 @@ nav .button:hover{
 -----------------------------------*/
 #certifications {
 	background: #68d67aff;
-	padding-bottom: 10px;
+	padding-bottom: 8px;
+	overflow: hidden;
 }
-#certification .certificate{
+#certifications .certificate{
 	display: inline-block;
-	width: 10%;
+	width: 48%;
+	min-width: 260px;
+	height: 200px;
+	float: left;
+	margin: 5px 1%;
 }
 #certifications .button{
 	color:  #fffdd0;
@@ -139,6 +146,9 @@ nav .button:hover{
 
 /*Skills
 -----------------------------------*/
+#Skills{
+	clear: both;
+}
 .column{
 	display: inline-block;
 	float: left;
@@ -160,11 +170,11 @@ nav .button:hover{
 }
 /*Contact Footer
 -----------------------------------*/
-footer{
+footer#contact{
 	clear: both;
 	background: #5FB7BF;
 }
-footer a:hover { 
+footer#contact a:hover { 
 	text-decoration: none;
 	background: #F4F1BB;
 	border-radius: 4px;

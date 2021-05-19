@@ -1,3 +1,8 @@
+/*Header Secondary*/
+header h1{
+	text-align: center;
+	color: #8AAA79
+}
 /*Navigation Secondary*/
 #nav-bar a{
 	display: inline-block;
