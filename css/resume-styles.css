@@ -50,6 +50,7 @@ header{
 nav {
 	width: 58%;
 	margin: 8px auto;
+	text-align: center;
 }
 nav .button{
 	display: inline-block;
@@ -110,23 +111,27 @@ nav .button:hover{
 
 /*Education
 -----------------------------------*/
-.education .grades{
+#education .grades{
 	font-weight: bold;
 }
-.education a:hover{
+#education a:hover{
 	outline: 2px solid;
 }
 /*Certifications
 -----------------------------------*/
-.certifications {
+#certifications {
 	background: #68d67aff;
 	padding-bottom: 10px;
 }
-.certifications .button{
+#certification .certificate{
+	display: inline-block;
+	width: 10%;
+}
+#certifications .button{
 	color:  #fffdd0;
 	background: #0d1f2d;
 }
-.certifications .button:hover { 
+#certifications .button:hover { 
 	color:  #0d1f2d;
 	text-decoration: none;
 	background: #fffdd0;
@@ -135,8 +140,8 @@ nav .button:hover{
 /*Skills
 -----------------------------------*/
 .column{
-	float: left;
-	width: 33%
+	display: inline-block;
+	width: 30%
 }/*also used in hobbies*/
 
 /*Hobbies
