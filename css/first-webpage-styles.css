@@ -2,9 +2,13 @@
 #nav-bar a{
 	display: inline-block;
 	/*font-weight: bold;*/
-	/*text-decoration: none;*/
+	text-decoration: none;
 	color: #F2C078;
 	background: #8AAA79;
 	padding: 8px;
 	border-radius: 4px;
+}
+#nav-bar a:hover{
+	color: #8AAA79;
+	background: #F2C078;
 }
