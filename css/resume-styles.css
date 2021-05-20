@@ -57,10 +57,17 @@ nav .button{
 	margin: 2px 2px;
 	background: #add8e6;
 }
+nav .button#covid-19:link{
+	/*to be removed once the crisis is over*/
+	color: #EAAC8B;
+	background: #C1292E;
+}
 nav .button:hover{
-	display: inline-block;
-	margin: 2px 2px;
 	background: #d4ebf2;
+}
+nav .button#covid-19:hover{
+	/*to be removed once the crisis is over*/
+	background: rgba(193, 41, 46, .80);
 }
 /*Featured Projects
 -----------------------------------*/
