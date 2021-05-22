@@ -23,11 +23,23 @@ a:visited {
 	padding: 8px;
 	border-radius: 4px;
 }
+
 .content-wrapping{
 	width: 58%;
-	min-width: 250px;
+	min-width: 400px;
 	margin: 0 auto;
 }
+#swag{
+	/*wow! icon*/
+	align-content: center;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 20%;
+	max-width: 200px;
+	z-index: 2;
+}
+
 
 /*PersonalInfo
 -----------------------------------*/
@@ -37,7 +49,7 @@ header#intro{
 	margin: 0 auto;
 }
 #name{
-	color: #306b34;
+	color: #306B34;
 	font-family: 'Lobster', cursive;
 	font-size: 70px;
 	margin: 0;
@@ -50,18 +62,22 @@ header#intro{
 }
 /*Navigation
 -----------------------------------*/
-nav {
+nav:not(.secondary) {
 	margin: 5px auto;
 	text-align: center;
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
+
 nav .button{
 	display: inline-block;
+	font-size: 1vw;
+
 	margin: 2px 2px;
 	background: #add8e6;
 }
-nav .button#covid-19:link{
+nav .button#covid-19{
 	/*to be removed once the crisis is over*/
 	color: #EAAC8B;
 	background: #C1292E;
