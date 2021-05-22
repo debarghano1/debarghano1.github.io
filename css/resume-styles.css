@@ -32,7 +32,6 @@ a:visited {
 #swag{
 	/*wow! icon*/
 	display: inline-block;
-	outline: 1px dashed;
 	margin: 0 0 0 25%;
 	width: 20%;
 	max-width: 200px;
