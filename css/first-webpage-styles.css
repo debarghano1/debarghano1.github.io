@@ -30,20 +30,45 @@ nav.secondary a:hover{
 	color: #8AAA79;
 	background: #F4F1BB;
 }
+/*Main Sections
+-------------------------------*/
+.half-page{
+	display: inline-block;
+	width: 48%;
+	margin-right: 2%;
+	float: left;
+}
+.whole-page{
+	clear: both;
+}
+
+section h2{
+	background: #F7D4BC;
+}
 /*Footer Secondary
 -------------------------------*/
 footer.secondary{
 	background: #ACF7C1;
 	background: linear-gradient(#ACF7C1 40%, #5FB7BF 100%);
-	overflow: hidden;
+	display: grid;
+	grid-template-columns: 20% auto;
+	/*overflow: hidden;*/
 }
 footer.secondary img{
+	grid-column-start: 1;
+	width: 100%;
+	align-self: center;
+	/*display: inline-block;
 	float: left;
-	height: 3em;
-	width: auto;
+	width: 18%;
 	margin: 2% auto;
-	/*outline: 1px dashed;*/
+	outline: 1px dashed;*/
 }
 footer.secondary p{
+	grid-column-start: 2;
+	align-self: center;
+	/*display: inline-block;
+	width: 78%;
 	margin: 2% auto;
+	vertical-align: middle;*/
 }

@@ -16,7 +16,7 @@ a:link {
 	text-decoration: none;
 }
 a:visited { 
-	text-decoration: none;
+	/*text-decoration: none;*/	/*inherit from a:link*/
 	color: purple;
 }
 .button{
@@ -53,6 +53,8 @@ header#intro{
 nav {
 	margin: 5px auto;
 	text-align: center;
+	position: sticky;
+	top: 0;
 }
 nav .button{
 	display: inline-block;
@@ -125,9 +127,11 @@ nav .button#covid-19:hover{
 #education .grades{
 	font-weight: bold;
 }
-#education a:hover{
+/*wasn't liking outline thing*/
+/*#education a:hover{ 
 	outline: 2px solid;
-}
+	outline-style: ;
+}*/
 /*Certifications
 -----------------------------------*/
 #certifications {
@@ -147,9 +151,9 @@ nav .button#covid-19:hover{
 	color:  #fffdd0;
 	background: #0d1f2d;
 }
-#certifications .button:hover { 
+#certifications .button:hover, #certifications .button:focus { 
 	color:  #0d1f2d;
-	text-decoration: none;
+	/*text-decoration: none;*/	/*global style*/
 	background: #fffdd0;
 }
 
@@ -185,7 +189,7 @@ footer#contact{
 	background: #5FB7BF;
 }
 footer#contact a:hover { 
-	text-decoration: none;
+	/*text-decoration: none;*/	/*global style*/
 	background: #F4F1BB;
 	border-radius: 4px;
 }
