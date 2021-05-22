@@ -75,7 +75,7 @@ nav:not(.secondary) {
 }
 @media only screen and (max-width: 400px){
 	nav:not(.secondary){
-		font-size: 50%;
+		font-size: 40%;
 	}
 }
 nav .button{
