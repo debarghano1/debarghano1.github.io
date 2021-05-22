@@ -41,6 +41,7 @@ a:visited {
 }
 @media only screen and (max-width: 450px){
 	#swag{
+		/*hiding the wow swag icon in case of small screens*/
 		display: none;
 	}
 }
@@ -69,13 +70,14 @@ header#intro{
 nav:not(.secondary) {
 	margin: 5px auto;
 	text-align: center;
+	position: static;
 	position: sticky;
 	top: 0;
 	z-index: 1;
 }
 @media only screen and (max-width: 400px){
 	nav:not(.secondary){
-		font-size: 10px;
+		position: static;
 	}
 }
 nav .button{
