@@ -31,18 +31,21 @@ a:visited {
 }
 #swag{
 	/*wow! icon*/
-	margin: 0 auto;
+	display: inline-block;
+	outline: 1px dashed;
+	margin: 0 25%;
+	width: 20%;
+	max-width: 200px;
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	width: 20%;
-	max-width: 200px;
 	z-index: 2;
 }
 @media only screen and (max-width: 450px){
 	#swag{
 		/*hiding the wow swag icon in case of small screens*/
 		position: static;
+		width: 100%;
 	}
 }
 
