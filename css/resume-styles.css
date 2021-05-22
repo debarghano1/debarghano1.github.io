@@ -2,12 +2,14 @@
 -----------------------------------*/
 body{
 	color: #343434;/*dark grey - almost black*/
+	background: #FFF0F0;
 	padding: 0;
-	margin: 0 0;
+	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 }
 img{
 	width: 300px;
+	border-radius: 4px;
 }
 a:link { 
 	font-weight: bold;
@@ -72,14 +74,14 @@ nav .button#covid-19:hover{
 /*Featured Projects
 -----------------------------------*/
 #projects{
-	background: #C48652FF;
+	background: #D19760;
+	background-image: linear-gradient(to bottom, #f4f1bb, #eadda4, #e1c98e, #d9b579, #d0a167, #d09e65, #d19a62, #d19760, #daa46b, #e4b176, #edbf82, #f6cc8e);
 	padding: 10px 0;
 	margin: 0 auto;
 }
 #projects img{
 	float: left;
-	border-radius: 4px;
-	margin-right: 30px;
+	margin-right: 25px;
 	margin-bottom: 8px;
 }
 
@@ -168,7 +170,8 @@ nav .button#covid-19:hover{
 -----------------------------------*/
 #hobbies{
 	clear: both;
-	background: #68d67aff;
+	background: #68D67A;
+	background: linear-gradient(#68D67A 40%, #5FB7BF 100%);
 	overflow: hidden;
 	padding: 5px;
 }

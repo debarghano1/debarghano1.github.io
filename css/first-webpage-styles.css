@@ -1,21 +1,49 @@
 /*Header Secondary
 -------------------------------*/
-header h1{
+header.secondary{
+	background: #ACF7C1;
+	background: linear-gradient(#F4F1BB 0%, #ACF7C1 75%);
+	padding: 1px 0px 12px;
 	text-align: center;
-	color: #8AAA79
+
+}
+header.secondary h1{
+	text-align: center;
+	color: #3C787E;
+	font-family: 'Lobster', cursive;
+	font-size: 70px;
+	max-width: 100%
+	margin: 12px 0;
 }
 /*Navigation Secondary
 -------------------------------*/
-#nav-bar a{
+nav.secondary a:link{
 	display: inline-block;
-	/*font-weight: bold;*/
-	text-decoration: none;
-	color: #F2C078;
+	/*font-weight: bold;*/		/*uses resume-styles*/
+	/*text-decoration: none;*/	/*uses resume-styles*/
+	color: #F4F1BB;
 	background: #8AAA79;
 	padding: 8px;
 	border-radius: 4px;
 }
-#nav-bar a:hover{
+nav.secondary a:hover{
 	color: #8AAA79;
-	background: #F2C078;
+	background: #F4F1BB;
+}
+/*Footer Secondary
+-------------------------------*/
+footer.secondary{
+	background: #ACF7C1;
+	background: linear-gradient(#ACF7C1 40%, #5FB7BF 100%);
+	overflow: hidden;
+}
+footer.secondary img{
+	float: left;
+	height: 3em;
+	width: auto;
+	margin: 2% auto;
+	/*outline: 1px dashed;*/
+}
+footer.secondary p{
+	margin: 2% auto;
 }
