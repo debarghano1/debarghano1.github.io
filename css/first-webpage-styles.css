@@ -2,7 +2,7 @@
 -------------------------------*/
 header.secondary{
 	background: #ACF7C1;
-	background: linear-gradient(#F4F1BB 0%, #ACF7C1 75%);
+	background: linear-gradient(#F4F1BB 0%, #ACF7C1 60%);
 	padding: 1px 0px 12px;
 	text-align: center;
 
@@ -37,6 +37,10 @@ nav.secondary a:hover{
 	width: 48%;
 	margin-right: 2%;
 	float: left;
+}
+.half-page#achievements{
+	margin-left: 2%;
+	margin-right: 0;
 }
 .whole-page{
 	clear: both;
