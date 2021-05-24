@@ -19,6 +19,9 @@ a:visited {
 	/*text-decoration: none;*/	/*inherit from a:link*/
 	color: purple;
 }
+h2, h3{
+	margin-top: 5px;
+}
 .button{
 	padding: 8px;
 	border-radius: 4px;
@@ -42,7 +45,8 @@ a:visited {
 }
 @media only screen and (max-width: 450px){
 	#swag{
-		/*hiding the wow swag icon in case of small screens*/
+		/*moving the wow swag icon in case of small screens*/
+		/*background:  linear-gradient();*/
 		position: static;
 		width: 100%;
 	}
@@ -70,8 +74,11 @@ header#intro{
 /*Navigation
 -----------------------------------*/
 nav:not(.secondary) {
-	margin: 5px auto;
+	margin: 0px auto;
+	padding: 5px 0;
+	background: rgba(182, 115, 48, .85);
 	text-align: center;
+	/*Sticky Navigation*/
 	position: static;
 	position: sticky;
 	top: 0;
@@ -85,26 +92,25 @@ nav:not(.secondary) {
 nav .button{
 	display: inline-block;
 	margin: 2px 2px;
-	background: #add8e6;
+	color: #F4F1BB;
 }
 nav .button#covid-19{
 	/*to be removed once the crisis is over*/
-	color: #EAAC8B;
 	background: #C1292E;
 }
 nav .button:hover{
-	background: #d4ebf2;
+	background: rgba(152, 85, 18, .70);
 }
 nav .button#covid-19:hover{
 	/*to be removed once the crisis is over*/
-	background: rgba(193, 41, 46, .80);
+	background: rgba(193, 41, 46, .70);
 }
 /*Featured Projects
 -----------------------------------*/
 #projects{
 	background: #D19760;
 	background-image: linear-gradient(to bottom, #f4f1bb, #eadda4, #e1c98e, #d9b579, #d0a167, #d09e65, #d19a62, #d19760, #daa46b, #e4b176, #edbf82, #f6cc8e);
-	padding: 10px 0;
+	padding: 5px 0 15px;
 	margin: 0 auto;
 }
 #projects img{
@@ -137,45 +143,57 @@ nav .button#covid-19:hover{
 -----------------------------------*/
 #work-experience{
 	background: #F6CC8E;
-	padding-bottom: 12px;
+	padding: 5px 0 15px;
+	margin: 5px 0;
 }
 #work-experience .button{
 	color: #911715ff;
 	background: #FA8334;
 }
 #work-experience .button:hover { 
-	text-decoration: none;
+	/*text-decoration: none;*/	/*global style*/
 	background: #F4F1BB;
 }
 
 /*Education
 -----------------------------------*/
+#education{
+	padding: 5px 0;
+	margin: 5px 0;
+}
 #education .grades{
 	font-weight: bold;
 }
-/*wasn't liking outline thing*/
+/*wasn't liking the outline thing*/
 /*#education a:hover{ 
 	outline: 2px solid;
 	outline-style: ;
 }*/
+
 /*Certifications
 -----------------------------------*/
 #certifications {
 	background: #68d67aff;
-	padding-bottom: 8px;
+	padding: 5px 0;
+	margin: 5px 0;
 	overflow: hidden;
 }
 #certifications .certificate{
 	display: inline-block;
+	position: relative;
 	width: 48%;
 	min-width: 260px;
-	height: 200px;
+	height: 215px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	float: left;
 	margin: 5px 1%;
 }
 #certifications .button{
 	color:  #fffdd0;
 	background: #0d1f2d;
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
 }
 #certifications .button:hover, #certifications .button:focus { 
 	color:  #0d1f2d;
@@ -187,6 +205,8 @@ nav .button#covid-19:hover{
 -----------------------------------*/
 #Skills{
 	clear: both;
+	padding: 5px 0;
+	margin: 5px 0;
 }
 .column{
 	display: inline-block;
@@ -203,7 +223,8 @@ nav .button#covid-19:hover{
 	background: #68D67A;
 	background: linear-gradient(#68D67A 40%, #5FB7BF 100%);
 	overflow: hidden;
-	padding: 5px;
+	padding: 5px 0;
+	margin: 5px 0;
 }
 #hobbies h2{
 	margin-top: 5px;
@@ -213,6 +234,8 @@ nav .button#covid-19:hover{
 footer#contact{
 	clear: both;
 	background: #5FB7BF;
+	padding: 5px 0;
+	margin: 5px 0;
 }
 footer#contact a:hover { 
 	/*text-decoration: none;*/	/*global style*/
