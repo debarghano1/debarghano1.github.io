@@ -217,6 +217,11 @@ nav .button#covid-19:hover{
 	margin: 5px 1%;
 	padding: 1%;
 }
+@media only screen and (max-width: 1010px){
+	#certifications .certificate{
+		width: 75%;
+	}
+}
 #certifications .certificate .button{
 	/*for the credential url*/
 	color:  #fffdd0;
@@ -252,7 +257,6 @@ nav .button#covid-19:hover{
 	min-width: 220px;
 	padding: auto 1%;
 	margin-right: 1%;
-	outline: 1px solid;
 }
 @media only screen and (max-width: 1400px){
 	.column{
