@@ -21,20 +21,20 @@ a:visited {
 	color: purple;
 }
 h1, h2, h3{
-	margin-top: 5px;
+	margin-top: 5px;	/*usually section headers, so margin/padding is handled by the section elements*/
 }
 h4, h5, h6{
-	margin-bottom: 5px;
+	margin-bottom: 5px;	/*usually list headers so...*/
 }
 h4+ul{
-	margin-top: 5px;
+	margin-top: 5px;	/**/
 }
 .button{
 	padding: 8px;
 	border-radius: 4px;
 }
 
-.content-wrapping{
+.content-wrapping{		/*keeps the content in the middle of the page*/
 	width: 58%;
 	min-width: 350px;
 	margin: 0 auto;
@@ -96,7 +96,7 @@ nav:not(.secondary) {
 	nav:not(.secondary){
 		font-size: 65%;
 		text-align: left;
-		/*position: static;*/
+		/*position: static;*/	/*unnecessary*/
 	}
 }
 nav .button{
@@ -133,7 +133,7 @@ nav .button#covid-19:hover{
 	clear: both;
 }
 #projects a{
-	color: #911715ff;
+	color: #911715ff;	/*for the linkedIn links*/
 }
 #projects a:hover{
 	color: #911715ff;
@@ -161,7 +161,7 @@ nav .button#covid-19:hover{
 	background: #FA8334;
 }
 #work-experience .button:hover { 
-	/*text-decoration: none;*/	/*global style*/
+	/*text-decoration: none;*/	/*not required - global style*/
 	background: #F4F1BB;
 }
 
@@ -177,7 +177,7 @@ nav .button#covid-19:hover{
 #education section .grades{
 	font-weight: bold;
 }
-#education section img{
+#education section img{	/*logo images*/
 	width: 100px;
 	position: static;
 	position: absolute;
@@ -196,11 +196,6 @@ nav .button#covid-19:hover{
 		top: 25px;
 	}
 }
-/*wasn't liking the outline thing*/
-/*#education a:hover{ 
-	outline: 2px solid;
-	outline-style: ;
-}*/
 
 /*Certifications
 -----------------------------------*/
@@ -250,14 +245,26 @@ nav .button#covid-19:hover{
 	padding: 5px 0;
 	margin: 5px 0;
 }
-.column{
+.column{	/*also used in hobbies*/
 	display: inline-block;
 	float: left;
 	width: 30%;
 	min-width: 220px;
-	padding: 1%;
+	padding: auto 1%;
 	margin-right: 1%;
-}/*also used in hobbies*/
+	outline: 1px solid;
+}
+@media only screen and (max-width: 1400px){
+	.column{
+		width: 48%;
+	}
+}
+@media only screen and (max-width: 850px){
+	.column{
+		width: auto;
+		padding: 0;
+	}
+}
 
 /*Hobbies
 -----------------------------------*/
