@@ -35,21 +35,21 @@ h1, h2, h3{
 }
 #swag{
 	/*wow! icon*/
-	display: inline-block;
-	margin: 0 0 15px 25%;
 	width: 20%;
 	max-width: 200px;
 	position: fixed;
-	bottom: 0;
-	right: 0;
+	bottom: 5px;
+	right: 5px;
 	z-index: 2;
 }
 @media only screen and (max-width: 450px){
 	#swag{
 		/*moving the wow swag icon in case of small screens*/
 		/*background:  linear-gradient();*/	/*won't look good, i think*/
+		display: block;
 		position: static;
-		width: 100%;
+		width: 58%;
+		margin: 0 auto;
 	}
 }
 
@@ -202,7 +202,7 @@ nav .button#covid-19:hover{
 }
 #certifications .certificate img{
 	/*not inserted yet*/
-	width: 150px;
+	width: 50px;
 	position: absolute;
 	right: 5px;
 	bottom: 5px;
@@ -245,7 +245,7 @@ footer#contact{
 	clear: both;
 	background: #5FB7BF;
 	padding: 5px 0;
-	margin: 5px 0;
+	margin: 5px 0 0; /*footer flush with the bottom of screen*/
 }
 footer#contact a:hover { 
 	/*text-decoration: none;*/	/*global style*/
