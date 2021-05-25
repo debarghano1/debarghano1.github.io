@@ -55,7 +55,7 @@ h1, h2, h3{
 
 /*PersonalInfo
 -----------------------------------*/
-#intro{
+header#intro{
 	/*Introduction header*/
 	background: #F4F1BB;
 	padding: 5px 0;
@@ -88,6 +88,7 @@ nav:not(.secondary) {
 }
 @media only screen and (max-width: 450px){
 	nav:not(.secondary){
+		text-align: left;
 		position: static;
 	}
 }
@@ -183,19 +184,20 @@ nav .button#covid-19:hover{
 #certifications .certificate{
 	display: inline-block;
 	position: relative;
-	width: 48%;
-	min-width: 260px;
+	width: 45%;
+	min-width: 250px;
 	height: 215px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	float: left;
 	margin: 5px 1%;
+	padding: 1%;
 }
 #certifications .button{
 	color:  #fffdd0;
 	background: #0d1f2d;
 	position: absolute;
-	left: 5px;
-	bottom: 5px;
+	left: 1%;
+	bottom: 1%;
 }
 #certifications .button:hover, #certifications .button:focus { 
 	color:  #0d1f2d;
