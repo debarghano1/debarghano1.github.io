@@ -171,8 +171,30 @@ nav .button#covid-19:hover{
 	padding: 5px 0;
 	margin: 5px 0;
 }
-#education .grades{
+#education section{
+	position: relative;
+}
+#education section .grades{
 	font-weight: bold;
+}
+#education section img{
+	width: 100px;
+	position: static;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+@media only screen and (max-width: 1400px){
+	#education section p:first-of-type{
+		/*so as to wrap text before overlapping the logo*/
+		padding-right: 110px;
+	}
+}
+@media only screen and (max-width: 850px){
+	#education section img{
+		/*so as to move the logo down before overlapping the school name*/
+		top: 25px;
+	}
 }
 /*wasn't liking the outline thing*/
 /*#education a:hover{ 
@@ -194,12 +216,14 @@ nav .button#covid-19:hover{
 	width: 45%;
 	min-width: 265px;
 	height: 217px;
+	/*giving the text card look*/
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	float: left;
 	margin: 5px 1%;
 	padding: 1%;
 }
 #certifications .certificate .button{
+	/*for the credential url*/
 	color:  #fffdd0;
 	background: #0d1f2d;
 	position: absolute;
@@ -207,7 +231,7 @@ nav .button#covid-19:hover{
 	bottom: 5px;
 }
 #certifications .certificate img{
-	/*not inserted yet*/
+	/*issuing organization logo*/
 	width: 50px;
 	position: absolute;
 	right: 5px;
