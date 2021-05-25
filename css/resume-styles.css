@@ -88,13 +88,14 @@ nav:not(.secondary) {
 }
 @media only screen and (max-width: 450px){
 	nav:not(.secondary){
+		font-size: 65%;
 		text-align: left;
-		position: static;
+		/*position: static;*/
 	}
 }
 nav .button{
 	display: inline-block;
-	margin: 2px 2px;
+	margin: 0 2px;
 	color: #F4F1BB;
 }
 nav .button#covid-19{
@@ -185,19 +186,26 @@ nav .button#covid-19:hover{
 	display: inline-block;
 	position: relative;
 	width: 45%;
-	min-width: 250px;
-	height: 215px;
+	min-width: 265px;
+	height: 217px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	float: left;
 	margin: 5px 1%;
 	padding: 1%;
 }
-#certifications .button{
+#certifications .certificate .button{
 	color:  #fffdd0;
 	background: #0d1f2d;
 	position: absolute;
-	left: 1%;
-	bottom: 1%;
+	left: 5px;
+	bottom: 5px;
+}
+#certifications .certificate img{
+	/*not inserted yet*/
+	width: 150px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
 }
 #certifications .button:hover, #certifications .button:focus { 
 	color:  #0d1f2d;
