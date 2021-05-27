@@ -27,7 +27,7 @@ h4, h5, h6{
 	margin-bottom: 5px;	/*usually list headers so...*/
 }
 h4+ul{
-	margin-top: 5px;	/**/
+	margin-top: 5px;	/*getting them closer to the headers*/
 }
 .button{
 	padding: 8px;
@@ -78,6 +78,9 @@ header#intro{
 	font-family: 'Krona One', sans-serif;
 	text-align: center;
 }
+header#intro h3{
+	visibility: hidden;
+}
 /*Navigation
 -----------------------------------*/
 nav:not(.secondary) {
@@ -120,8 +123,15 @@ nav .button#covid-19:hover{
 #projects{
 	background: #D19760;
 	background-image: linear-gradient(to bottom, #f4f1bb, #eadda4, #e1c98e, #d9b579, #d0a167, #d09e65, #d19a62, #d19760, #daa46b, #e4b176, #edbf82, #f6cc8e);
+	padding: 5px 0 0;
+	margin: 0 auto;
+}
+#projects section{
 	padding: 5px 0 15px;
 	margin: 0 auto;
+}
+#projects hr{
+
 }
 #projects img{
 	float: left;
@@ -213,7 +223,7 @@ nav .button#covid-19:hover{
 /*Certifications
 -----------------------------------*/
 #certifications {
-	background: #68d67aff;
+	background: #68D67A;
 	padding: 5px 0;
 	margin: 5px 0;
 	overflow: hidden;
@@ -224,6 +234,7 @@ nav .button#covid-19:hover{
 	width: 45%;
 	min-width: 265px;
 	height: 217px;
+	background-color: #FFF0F0;
 	/*giving the text card look*/
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	float: left;

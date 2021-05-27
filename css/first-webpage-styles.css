@@ -1,7 +1,7 @@
 /*Header Secondary
 -------------------------------*/
 header.secondary{
-	background: #ACF7C1;
+	background: #ACF7C1;	/*backup background*/
 	background: linear-gradient(#F4F1BB 0%, #ACF7C1 60%);
 	padding: 1px 0px 12px;
 	text-align: center;
