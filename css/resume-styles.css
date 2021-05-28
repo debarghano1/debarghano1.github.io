@@ -9,7 +9,9 @@ body{
 	scroll-behavior: smooth;
 }
 img{
+	display: block;
 	width: 300px;
+	margin: 0 auto;
 	border-radius: 4px;
 }
 a:link { 
@@ -19,6 +21,10 @@ a:link {
 a:visited { 
 	/*text-decoration: none;*/	/*inherit from a:link*/
 	color: purple;
+}
+h2{
+	font-family: 'Russo One', sans-serif;
+	font-size: calc(20px + 0.8vw);
 }
 h1, h2, h3{
 	margin-top: 5px;	/*usually section headers, so margin/padding is handled by the section elements*/
@@ -51,7 +57,6 @@ h4+ul{
 @media only screen and (max-width: 450px){
 	#swag{
 		/*moving the wow swag icon in case of small screens*/
-		/*background:  linear-gradient();*/	/*won't look good, i think*/
 		display: block;
 		position: static;
 		width: 58%;
@@ -70,7 +75,7 @@ header#intro{
 #name{
 	color: #306B34;
 	font-family: 'Lobster', cursive;
-	font-size: 70px;
+	font-size: calc(25px + 4.5vw);
 	text-align: center;
 }
 #headline{
@@ -78,7 +83,7 @@ header#intro{
 	font-family: 'Krona One', sans-serif;
 	text-align: center;
 }
-header#intro h3{
+#name+h3{
 	visibility: hidden;
 }
 /*Navigation
@@ -131,19 +136,22 @@ nav .button#covid-19:hover{
 	margin: 0 auto;
 }
 #projects hr{
-
+	border-bottom-color: #911715;
+	border-right-color: #911715;
 }
-#projects img{
-	float: left;
-	margin-right: 25px;
-	margin-bottom: 8px;
+
+@media only screen and (min-width: 900px){
+	#projects img{
+		float: left;
+		margin: auto 25px 8px auto;
+	}
 }
 
 #projects h4{
 	clear: both;
 }
 #projects a{
-	color: #911715ff;	/*for the linkedIn links*/
+	color: #911715;	/*for the linkedIn links*/
 }
 #projects a:hover{
 	color: #911715ff;
@@ -207,10 +215,14 @@ nav .button#covid-19:hover{
 	right: 5px;
 	top: 5px;
 }
+#education hr{
+	border-bottom-color: #F6CC8E;
+	border-right-color: #F6CC8E;
+}
 @media only screen and (max-width: 1400px){
 	#education section p:first-of-type{
 		/*so as to wrap text before overlapping the logo*/
-		padding-right: 110px;
+		margin-right: 110px;
 	}
 }
 @media only screen and (max-width: 850px){
