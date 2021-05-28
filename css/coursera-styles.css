@@ -1,0 +1,190 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	font-family: "OpenSans-Bold", Arial, sans-serif;
+}
+a{
+	text-decoration: none;
+}
+body > a{
+	display: inline-block;
+	padding: 15px;
+	margin: 5px;
+	font-weight: 700;
+	background-color:  rgba(182, 115, 48, 1);
+	color: #F4F1BB;
+}
+#site-header{
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 225px 50px 125px auto 150px 200px;
+	grid-template-rows: 70px;
+	background: #FFF;
+	border-top: 2px solid #999;
+	border-bottom: 2px solid #999;
+	position: sticky;
+	top: -0.1px;
+	z-index: 1;
+}
+#site-header a:first-of-type{
+	grid-column: 1/2;
+	align-self: center;
+	height: 100%;
+	margin-left: 10px;
+}
+#site-header > button:first-of-type{
+	grid-column: 3/4;
+	height: 60%;
+	align-self: center;
+	width: 80%;
+	justify-self: center;
+	background-color: #0056D2;
+	color: #FFF;
+	border: none;
+	border-radius: 2px;
+}
+#site-header > button:first-of-type:after{
+	content: " \02C5";
+	font-size: 125%;
+}
+#site-header form{
+	grid-column: 4/5;
+	align-self: center;
+	height: 50%;
+}
+#site-header input{
+	width: 70%;
+	height: 100%;
+}
+#site-header form button{
+	height: 100%;
+}
+#site-header a:last-of-type{
+	grid-column: 5/6;
+	text-align: right;
+	align-self: center;
+	margin-right: 15px;
+}
+#site-header > button:last-of-type{
+	grid-column-start: 6;
+	background-color: #FFF;
+	border: none;
+	border-left: 2px solid #999;
+}
+
+/*Page Header
+--------------------------------------------*/
+.backgroundheader{
+	background: #014C8C;
+	background-image: linear-gradient(to right, #2C6581 0%, #0056D2 100%);
+	height: 500px;
+}
+#page-header{
+	color: #FFF;
+	min-height: 100%;
+	overflow: hidden;
+}
+#page-header a{
+	color: #FFF;
+}
+#page-header section:first-of-type{
+	float: left;
+	box-sizing: border-box;
+	width: 45%;
+	height: 100%;
+	padding: 20px 1.5%;
+	margin-left: 30px;
+}
+#page-header nav ol{
+	padding: 0;
+	margin: 0 0 50px;
+	list-style: none;
+}
+#page-header nav ol li{
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+}
+#page-header nav ol li+li:before {
+  padding: 8px;
+  color: #FFF;
+  content: "\02C3";
+}
+#page-header section h1{
+	font-size: 34px;
+}
+#page-header section picture{
+	margin: 5px 0;
+	display: grid;
+	grid-template-columns: 50px auto;
+}
+#page-header section picture img{
+	width: 36px;
+	border-radius: 50%;
+	grid-column-start: 1;
+	align-self: center;
+}
+#page-header section picture p{
+	grid-column-start: 2;
+	align-self: center;
+}
+#page-header section button{
+	height: 80px;
+	width: 200px;
+	float: left;
+}
+#page-header section button p{
+	line-height: 25px;
+}
+#page-header section button + p{
+	margin: 30.5px auto 30.5px 215px;
+}
+#page-header section button + p + p{
+	clear: both;
+	margin-top: 50px;
+}
+#page-header > picture{
+	display: block;
+	box-sizing: border-box;
+	width: 45%;
+	height: 100%;
+	padding: 20px 1.5%;
+	margin-right: 30px;
+	float: right;
+}
+#courseraPlus{
+	display: block;
+	clear: both;
+	background: #003974;
+	color: #FFF;
+	padding: 12px 1px;
+	margin: 0;
+	opacity: 0.9;
+	z-index: 0;
+}
+#courseraPlus:hover{
+	opacity: 1;
+}
+#courseraPlus ul{
+	margin: 0;
+}
+#courseraPlus ul li{
+	display: inline-block;
+	margin: auto 10px;
+}
+nav[aria-label="Page Sections"]{
+	background: #FFF;
+	border: 2px solid #999;
+}
+nav[aria-label="Page Sections"] ul{
+	display:  block;
+	margin: 16px auto;
+	list-style: none;
+}
+nav[aria-label="Page Sections"] ul li{
+	display: inline-block;
+	padding: 15px 30px 15px 0;
+	margin: 0 10px;
+}
