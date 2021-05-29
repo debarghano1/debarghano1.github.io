@@ -35,6 +35,10 @@ h4, h5, h6{
 h4+ul{
 	margin-top: 5px;	/*getting them closer to the headers*/
 }
+main > section{
+	padding: 5px 0;
+	margin: 5px 0;
+}
 .button{
 	padding: 8px;
 	border-radius: 4px;
@@ -69,8 +73,8 @@ h4+ul{
 header#intro{
 	/*Introduction header*/
 	background: #F4F1BB;
-	padding: 5px 0;
-	margin: 0 auto;
+	padding: 1px 0;
+	margin: 0;
 }
 #name{
 	color: #306B34;
@@ -116,10 +120,10 @@ nav .button#covid-19{
 	/*to be removed once the crisis is over*/
 	background: #C1292E;
 }
-nav .button:hover{
+nav .button:hover, nav .button.current{
 	background: rgba(152, 85, 18, .70);
 }
-nav .button#covid-19:hover{
+nav .button#covid-19:hover, nav .button#covid-19.current{
 	/*to be removed once the crisis is over*/
 	background: rgba(163, 11, 16, .70);
 }
@@ -128,8 +132,8 @@ nav .button#covid-19:hover{
 #projects{
 	background: #D19760;
 	background-image: linear-gradient(to bottom, #f4f1bb, #eadda4, #e1c98e, #d9b579, #d0a167, #d09e65, #d19a62, #d19760, #daa46b, #e4b176, #edbf82, #f6cc8e);
-	padding: 5px 0 0;
-	margin: 0 auto;
+	padding-bottom: 0;
+	margin-top: 0;
 }
 #projects section{
 	padding: 5px 0 15px;
@@ -171,18 +175,17 @@ nav .button#covid-19:hover{
 -----------------------------------*/
 #work-experience{
 	background: #F6CC8E;
-	padding: 5px 0 15px;
-	margin: 5px 0;
+	padding-bottom: 15px;
 }
-#work-experience #company{
+#work-experience .company{
 	display: grid;
 	grid-template-columns: 50px auto;
 }
-#work-experience #company img{
+#work-experience .company img{
 	width: 50px;
 	grid-column-start: 1;
 }
-#work-experience #company p{
+#work-experience .company p{
 	grid-column-start: 2;
 	align-self: center;
 	margin: 0 10px;
@@ -191,17 +194,13 @@ nav .button#covid-19:hover{
 	color: #911715ff;
 	background: #FA8334;
 }
-#work-experience .button:hover { 
+#work-experience .button:hover,  #work-experience .button:focus{ 
 	/*text-decoration: none;*/	/*not required - global style*/
 	background: #F4F1BB;
 }
 
 /*Education
 -----------------------------------*/
-#education{
-	padding: 5px 0;
-	margin: 5px 0;
-}
 #education section{
 	position: relative;
 }
@@ -236,8 +235,6 @@ nav .button#covid-19:hover{
 -----------------------------------*/
 #certifications {
 	background: #68D67A;
-	padding: 5px 0;
-	margin: 5px 0;
 	overflow: hidden;
 }
 #certifications .certificate{
@@ -283,8 +280,10 @@ nav .button#covid-19:hover{
 -----------------------------------*/
 #Skills{
 	clear: both;
-	padding: 5px 0;
-	margin: 5px 0;
+	overflow: hidden;
+}
+#Skills #top-skills{
+	font-size: 110%;
 }
 .column{	/*also used in hobbies*/
 	display: inline-block;
@@ -313,16 +312,14 @@ nav .button#covid-19:hover{
 	background: #68D67A;
 	background: linear-gradient(#68D67A 40%, #5FB7BF 100%);
 	overflow: hidden;
-	padding: 5px 0;
-	margin: 5px 0;
 }
 /*Contact Footer
 -----------------------------------*/
 footer#contact{
 	clear: both;
 	background: #5FB7BF;
-	padding: 5px 0;
-	margin: 5px 0 0; /*footer flush with the bottom of screen*/
+	padding: 1px 0;
+	margin-bottom: 0; /*footer flush with the bottom of screen*/
 }
 footer#contact a:hover { 
 	/*text-decoration: none;*/	/*global style*/

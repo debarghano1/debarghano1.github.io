@@ -14,6 +14,14 @@ body > a{
 	background-color:  rgba(182, 115, 48, 1);
 	color: #F4F1BB;
 }
+button{
+	border: none;
+	border-radius: 2px;
+}
+main > section{
+	margin: auto 30px;
+	padding: 0 20px;
+}
 #site-header{
 	margin: 0 auto;
 	padding: 0;
@@ -27,6 +35,8 @@ body > a{
 	position: sticky;
 	top: -0.1px;
 	z-index: 1;
+	white-space: nowrap;
+	overflow-x: auto;
 }
 #site-header a:first-of-type{
 	grid-column: 1/2;
@@ -42,8 +52,6 @@ body > a{
 	justify-self: center;
 	background-color: #0056D2;
 	color: #FFF;
-	border: none;
-	border-radius: 2px;
 }
 #site-header > button:first-of-type:after{
 	content: " \02C5";
@@ -97,6 +105,8 @@ body > a{
 	padding: 20px 1.5%;
 	margin-left: 30px;
 }
+/*Breadcrumb Navigation
+--------------------------------------------*/
 #page-header nav ol{
 	padding: 0;
 	margin: 0 0 50px;
@@ -112,6 +122,8 @@ body > a{
   color: #FFF;
   content: "\02C3";
 }
+/*Page Header rest of it
+--------------------------------------------*/
 #page-header section h1{
 	font-size: 34px;
 }
@@ -134,12 +146,15 @@ body > a{
 	height: 80px;
 	width: 200px;
 	float: left;
+	background: #C98E22;
 }
 #page-header section button p{
 	line-height: 25px;
 }
 #page-header section button + p{
-	margin: 30.5px auto 30.5px 215px;
+	margin: 31.5px auto 31.5px 215px;
+	font-size: 80%;
+	font-weight: 700;
 }
 #page-header section button + p + p{
 	clear: both;
@@ -154,6 +169,8 @@ body > a{
 	margin-right: 30px;
 	float: right;
 }
+/*couresera Plus link bar
+--------------------------------------------*/
 #courseraPlus{
 	display: block;
 	clear: both;
@@ -174,9 +191,16 @@ body > a{
 	display: inline-block;
 	margin: auto 10px;
 }
+/*Page navigation
+--------------------------------------------*/
 nav[aria-label="Page Sections"]{
 	background: #FFF;
-	border: 2px solid #999;
+	border-bottom: 2px solid #999;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	white-space: nowrap;
+	overflow-x: auto;
 }
 nav[aria-label="Page Sections"] ul{
 	display:  block;
@@ -187,4 +211,67 @@ nav[aria-label="Page Sections"] ul li{
 	display: inline-block;
 	padding: 15px 30px 15px 0;
 	margin: 0 10px;
+}
+nav[aria-label="Page Sections"] ul a{
+	color: #555;
+}
+nav[aria-label="Page Sections"] ul a:active{
+	font-weight: 700;
+	color: #2C6581;
+}
+/*About the Course
+--------------------------------------------*/
+#about > h2, #instructors > h2{
+	margin: 5px auto;
+	font-size: 160%;
+}
+#about{
+	width: 60%;
+	float: left;
+}
+
+/*Highlights
+--------------------------------------------*/
+#highlights{
+	margin-left: 65%;
+}
+#highlights dt{
+	font-weight: 700;
+	font-size: 135%;
+	margin: 20px auto 5px;
+}
+#highlights dd{
+	color: #555;
+	margin: 5px auto 20px;
+}
+/*Instructors
+--------------------------------------------*/
+#instructors{
+	clear: both;
+}
+#instructors img{
+	border-radius: 50%;
+	float: left;
+}
+#instructors p, #instructors h3{
+	margin: 4px auto 4px 120px;
+}
+/*Offered By
+--------------------------------------------*/
+#offeredBy{
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 180px auto;
+}
+#offeredBy img{
+	grid-column: 1/2;
+	grid-row-start: 2;
+}
+#offeredBy > section{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	align-self: center;
+}
+#offeredBy section h3{
+	font-size: 1.5em;
 }
