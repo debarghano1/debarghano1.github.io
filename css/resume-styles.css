@@ -151,6 +151,13 @@ nav .button#covid-19:hover, nav .button#covid-19.current{
 	}
 }
 
+#projects section section img{
+	width: 200px;
+	display: inline-block;
+	float: none;
+	margin: auto 10px;
+}
+
 #projects h4{
 	clear: both;
 }
